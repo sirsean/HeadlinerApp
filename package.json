@@ -1,0 +1,25 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "npm run api:build && npm run vite:build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run api:start\" \"npm run vite:start\"",
+    "api:build": "cd api && npm run build",
+    "api:start": "cd api && npm run start",
+    "vite:build": "cd vite-project && npm run build",
+    "vite:start": "cd vite-project && npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.0.6"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
