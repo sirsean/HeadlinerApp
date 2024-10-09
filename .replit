@@ -15,6 +15,7 @@ language = "nodejs"
 run = ["node", "api/src/index.js"]
 deploymentTarget = "cloudrun"
 ignorePorts = false
+build = ["sh", "-c", "npm run build"]
 
 [[ports]]
 localPort = 3000
