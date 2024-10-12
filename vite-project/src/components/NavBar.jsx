@@ -7,7 +7,6 @@ export default function NavBar() {
       <div className="navbar-left">
         <Link to="/" className="navbar-logo">
           <img src="/android-chrome-512x512.png" alt="Headliner" className="navbar-logo-image" />
-          <span className="navbar-title">Headliner</span>
         </Link>
       </div>
       <div className="navbar-right">

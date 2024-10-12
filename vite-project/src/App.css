@@ -13,6 +13,11 @@
   font-size: 1rem;
 }
 
+.HomePage h1 {
+  font-family: "Sixtyfour Convergence", sans-serif;
+  text-transform: uppercase;
+}
+
 .ViewPage img.Token {
   max-width: 100%;
   border-radius: 8px;

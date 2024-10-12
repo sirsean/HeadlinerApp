@@ -15,7 +15,7 @@
 body {
   margin: 0;
   display: flex;
-  max-width: 1024px;
+  max-width: 640px;
   min-width: 320px;
   min-height: 100vh;
   margin: 0 auto;
@@ -63,4 +63,10 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (min-width: 1024px) {
+  body {
+    max-width: 1024px;
+  }
 }

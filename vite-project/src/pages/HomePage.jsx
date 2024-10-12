@@ -26,6 +26,7 @@ export default function HomePage() {
   return (
     <>
       <div className="HomePage">
+        <h1>Headliner</h1>
         <p>Stay ahead of the curve with Headliner, the app that delivers the most important world news story every hour. Headliner analyzes breaking news from around the globe, choosing the top headline that matters most, right now. Whether it’s a global event, political shake-up, or cultural phenomenon, Headliner ensures you’re always informed.</p>
         <ul>
           <li><Link to="/recent">Recent</Link></li>
