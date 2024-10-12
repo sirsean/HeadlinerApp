@@ -1,6 +1,7 @@
 import express from "express";
 import { asyncHandler } from "./middleware.js";
 import { getObject, downloadAll, downloadCurrent } from '../data/r2.js';
+import sortBy from 'sort-by';
 
 // webserver
 
@@ -23,6 +24,14 @@ app.get('/api/all', asyncHandler(async (req, res) => {
 app.get('/api/current', asyncHandler(async (req, res) => {
   const current = await downloadCurrent();
   res.json(current);
+}));
+
+// get the recent news items
+app.get('/api/recent', asyncHandler(async (req, res) => {
+  const recent = await downloadAll()
+    .then(all => all.metadata.sort(sortBy('-at')))
+    .then(all => all.slice(0, 5));
+  res.json(recent);
 }));
 
 // serve the images

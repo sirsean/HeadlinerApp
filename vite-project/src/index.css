@@ -15,7 +15,7 @@
 body {
   margin: 0;
   display: flex;
-  max-width: 640px;
+  max-width: 1024px;
   min-width: 320px;
   min-height: 100vh;
   margin: 0 auto;

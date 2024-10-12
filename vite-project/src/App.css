@@ -10,7 +10,7 @@
 }
 
 .HomePage {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .ViewPage img.Token {
@@ -20,15 +20,9 @@
 }
 
 .ViewPage .Description {
-  font-size: 1.3rem;
-}
-
-.MintPage {
-  font-size: 1.2rem;
-}
-
-.MintPage form {
-  text-align: center;
+  background: rgb(43, 43, 43, 0.6);
+  border-radius: 8px;
+  padding: 0.5em;
 }
 
 .error {
@@ -40,4 +34,8 @@
 
 .error button {
   margin-top: 1em;
+}
+
+.RecentPage {
+  margin-top: 12px;
 }

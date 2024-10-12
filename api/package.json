@@ -16,6 +16,7 @@
     "@aws-sdk/lib-storage": "^3.667.0",
     "express": "^4.21.1",
     "http-proxy-middleware": "^3.0.3",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "sort-by": "^1.2.0"
   }
 }

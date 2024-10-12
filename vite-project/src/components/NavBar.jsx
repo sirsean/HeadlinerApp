@@ -11,8 +11,8 @@ export default function NavBar() {
         </Link>
       </div>
       <div className="navbar-right">
+        <Link to="/recent" className="navbar-link">Recent</Link>
         <Link to="/gallery" className="navbar-link">Gallery</Link>
-        <w3m-button />
       </div>
     </nav>
   );

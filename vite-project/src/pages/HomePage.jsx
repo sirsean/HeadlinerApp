@@ -1,4 +1,4 @@
-import Gallery from '../components/Gallery';
+import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 function getShuffledArray(n) {
@@ -27,6 +27,10 @@ export default function HomePage() {
     <>
       <div className="HomePage">
         <p>Stay ahead of the curve with Headliner, the app that delivers the most important world news story every hour. Headliner analyzes breaking news from around the globe, choosing the top headline that matters most, right now. Whether it’s a global event, political shake-up, or cultural phenomenon, Headliner ensures you’re always informed.</p>
+        <ul>
+          <li><Link to="/recent">Recent</Link></li>
+          <li><Link to="/gallery">Gallery</Link></li>
+        </ul>
         <ul>
           <li><strong>Real-time Updates:</strong> Every hour, the most critical news story is selected and summarized just for you.</li>
           <li><strong>Dynamic Visuals:</strong> Each story is paired with a custom-generated image that captures its essence.</li>
